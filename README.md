@@ -1,10 +1,10 @@
 # Classification and Regression
 
-### Abstract:
+### Abstract:-
 The main objective of the project is to evaluate the performance of various classification techniques like logistic regression and Support vector machines.
 
 ###Problem 1: Logistic Regression
-#####Implementation:
+#####Implementation:-
 Using the Logistic Regression classification was performed on the training, validation and testing datasets. We have used blrObjFunction() and blrPredict() to implement the Logistic Regression using gradient descent where blrObjFunction() return error and error_grad.
 In this project we have to classify handwritten digits so we divided the training data into 10 binary classifier and calculated posterior class probability of each group where 1 denotes that digit belong to that class and 0 denotes that it doesn’t belong to that class.
 We can calculate posterior class probability using this formulae.
@@ -13,14 +13,14 @@ Error can be calculated as.
 E(w) = Σ{tn ln yn + (1 - tn) ln(1 - yn)}
 Now our blrObjFunction() will keep on modifying weights until it minimizes this error to a maximum of 50 times. After learning the final weight matrix we will pass this matrix to blrPredict() function so that using these weights we can predict the labels of test data.
 
-#####Observations:
+#####Observations:-
 [Result](https://github.com/ankit118/Regression-and-SVM/blob/master/report.pdf)
 
 ###Problem 2: Support vector machines
-#####Implementation:
+#####Implementation:-
 Using the Support Vector Machine tool in sklearn.svm.SVM classification was performed on the training, validation and testing datasets.
 
-#####Observations:
+#####Observations:-
 Following accuracies were observed for the training,validation and test datasets.
 
 1. Using linear kernel (all other parameters are kept default)
@@ -44,7 +44,7 @@ Following graph displays the accuracies obtained while varying value of C from 1
 
 [Result](https://github.com/ankit118/Regression-and-SVM/blob/master/report.pdf)
 
-#####Comparison of Logistic Regression and SVM:
+#####Comparison of Logistic Regression and SVM:-
 After repeated experiments we can conclude that the performance of SVM and LR are approximtely close for the linear kernel where SVM exceeds performance by 3%-5%.
 Accuracy from the Radial Basis function (with gamma parameter set to 1) are very low. It will be just too slow or the memory complexity will just be too high.
 Accuracy of Logistic Regression can be increased by increasing the maxiter to a higher number than 50 but accuracy Vs time is a major factor. We have also performed the experiment when maxiter was 3, at that time we were getting accuracy about 79%. So to increase accuracy by next 12% we had to increase maxiter by 47. By this we can conclude that accuracy increases very slowly and is a very time taking process.
