@@ -14,7 +14,7 @@ E(w) = Σ{tn ln yn + (1 - tn) ln(1 - yn)}
 Now our blrObjFunction() will keep on modifying weights until it minimizes this error to a maximum of 50 times. After learning the final weight matrix we will pass this matrix to blrPredict() function so that using these weights we can predict the labels of test data.
 
 #####Observations:
-[Result](https://github.com/ankit118/SVM/blob/master/report.pdf)
+[Result](https://github.com/ankit118/Regression-and-SVM/blob/master/report.pdf)
 
 ###Problem 2: Support vector machines
 #####Implementation:
@@ -42,7 +42,7 @@ Test data accuracy:94.42%
 4. Using radial basis function with value of gamma setting to default and varying value of C from 1 to 100
 Following graph displays the accuracies obtained while varying value of C from 1 to 100.Thus as we increase the value of C accuracy goes on increasing. The C parameter trades off misclassification of training examples against simplicity of the decision surface. A low C makes the decision surface smooth, while a high C aims at classifying all training examples correctly by give the model freedom to select more samples as support vectors.
 
-[Result](https://github.com/ankit118/SVM/blob/master/report.pdf)
+[Result](https://github.com/ankit118/Regression-and-SVM/blob/master/report.pdf)
 
 #####Comparison of Logistic Regression and SVM:
 After repeated experiments we can conclude that the performance of SVM and LR are approximtely close for the linear kernel where SVM exceeds performance by 3%-5%.
